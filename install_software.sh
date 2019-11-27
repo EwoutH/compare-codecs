@@ -26,11 +26,12 @@ if [ "$1" = "travis" ]; then
 fi
 
 # Requirements for compiling various packages and scripts.
+sudo apt-get update
 sudo apt-get install yasm mkvtoolnix mercurial cmake cmake-curses-gui \
-  build-essential yasm nasm python-numpy
+  build-essential nasm python-numpy
 
 # Install prerequisites for running Jekyll as a web server
-sudo apt-get install ruby1.9.1-dev nodejs
+sudo apt-get install ruby2.5 nodejs
 # Jekyll 2.4.0 depends on redcarpet.
 # Redcarpet 3.1.2 depends on ruby 1.9.2 or later.
 # redcarpet 3.0.0 is installable under 1.9.1.
