@@ -31,13 +31,13 @@ sudo apt-get install yasm mkvtoolnix mercurial cmake cmake-curses-gui \
   build-essential nasm python-numpy
 
 # Install prerequisites for running Jekyll as a web server
-sudo apt-get install ruby2.5 nodejs
+sudo apt-get install ruby nodejs
 # Jekyll 2.4.0 depends on redcarpet.
 # Redcarpet 3.1.2 depends on ruby 1.9.2 or later.
 # redcarpet 3.0.0 is installable under 1.9.1.
 # celluloid-0.16.0 has the same problem.
 # So we limit to a jekyll version that builds under 1.9.1.
-sudo gem install jekyll -v 1.5.1
+sudo gem install jekyll
 
 # Python packages
 sudo -H pip install y4m
