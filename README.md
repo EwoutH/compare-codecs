@@ -1,5 +1,4 @@
-Compare Codecs
-==============
+# Compare Codecs [![Travis Build Status](https://travis-ci.org/google/compare-codecs.svg?branch=master)](https://travis-ci.org/google/compare-codecs)
 
 This project exists to fulfill a frequently heard reqest: To be able to compare
 the performance of codecs -- consistently, openly, and usefully.
