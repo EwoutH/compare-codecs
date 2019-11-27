@@ -1,4 +1,4 @@
-# Copyright 2014 Google.
+# Copyright 2019 Google.
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -18,11 +18,12 @@
 # compile cycle takes too many minutes, so we compile as little as possible.
 #
 language: python
-python: 2.7
+dist: bionic
+python: 3.7
+
 install:
  - . init.sh
  - ./install_software.sh travis
 script:
  - . init.sh
  - run_all_tests travis
-
